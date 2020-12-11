@@ -19,3 +19,7 @@ We use a [crib dragging tool](https://lzutao.github.io/cribdrag/) to simplify th
 #### Searching google
 
 ![Google search](/lab2/risk_it_on_one.png?raw=true "Optional Title")
+
+#### Decoding
+
+![Decoded text](/lab2/run_decode.png?raw=true)
