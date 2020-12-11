@@ -17,3 +17,13 @@ Create new account which will be seeded with utc time. Receive the first number 
 Once found the seed value, send winning requests.
 
 ![Run results](/lab3/mt_run.png?raw=true)
+
+### Mersenne Twister 2
+
+Use untemper function to retrieve the state of generator. Retrieve the full state by making 624 calls to the server.
+
+Set state with `np.random.set_state()` and use it to generate winning predictions.
+
+![Run results](/lab3/mtstrong1.png?raw=true)
+
+![Run results](/lab3/mtstrong2.png?raw=true)
