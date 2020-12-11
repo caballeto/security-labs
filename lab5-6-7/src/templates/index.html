@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/img/favicon.ico') }}"/>
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/Feather/feather.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/libs/aos/dist/aos.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/libs/highlightjs/styles/vs2015.css') }}">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/theme.min.css') }}">
+
+    <title>Security Web App</title>
+
+  </head>
+  <body>
+    <!-- CONTENT
+    ================================================== -->
+    <section class="section-border border-primary">
+      <div class="container d-flex flex-column">
+        <div class="row align-items-center justify-content-center no-gutters min-vh-100">
+          <div class="col-12 col-md-5 col-lg-4 py-8 py-md-11">
+
+            {% if user and user.is_authenticated %}
+              <h1 class="mb-0 font-weight-bold text-center">
+                You are <b>signed in</b>.
+              </h1>
+              <p>Your User information:</p>
+              <p>Setting form to be updated here</p>
+              <p>{{ user.email }} </p>
+              <p>{{ user.first_name_value }} </p>
+              <p>{{ user.last_name_value }} </p>
+              <p class="mt-3"><a href="{{ url_for('auth.settings') }}">Reset Settings</a></p>
+            {% else %}
+              <h1 class="mt-3 font-weight-bold text-center">
+                You are <b>signed out</b>.
+              </h1>
+            {% endif %}
+
+            <!-- Heading -->
+            <h3 class="m-5 text-center">
+              Navigation
+            </h3>
+
+            {% if user and user.is_authenticated %}
+              <p class="bg-gray-300 p-3"><a class="mb-2" href="{{ url_for('auth.signout') }}">Sign Out</a></p>
+            {% else %}
+              <p class="bg-gray-300 p-3"><a class="mb-2" href="{{ url_for('auth.signup') }}">Sign Up</a></p>
+              <p class="bg-gray-300 p-3"><a class="mb-2" href="{{ url_for('auth.signin') }}">Sign In</a></p>
+            {% endif %}
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="{{ url_for('static', filename='assets/libs/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/libs/aos/dist/aos.js') }}"></script>
+
+    <!-- Theme JS -->
+    <script src="{{ url_for('static', filename='assets/js/theme.min.js') }}"></script>
+  </body>
+</html>

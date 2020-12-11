@@ -1,0 +1,360 @@
+// 
+// user.scss
+// Use this to write your custom SCSS
+//
+
+// Brand styles (header, footer)
+.navbar-brand-img {
+  max-height: 5rem !important;
+}
+
+.footer-brand {
+  max-width: 10rem;
+}
+
+// Github code theme
+.gist .gist-data {
+	background-color: transparent !important;
+	border-bottom: 0 !important;
+}
+
+.gist-meta {
+  display: none !important;
+}
+
+.response-example {
+  background: #f7fafc;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.07);
+  .response-topbar {
+    background: #e3e8ee;
+    padding-bottom: 4px;
+    .response-title {
+      font-size: 12px;
+      user-select: none;
+      font-weight: 500;
+      text-transform: uppercase;
+      pointer-events: none;
+      color: #697386;
+      padding: 8px 8px 8px 12px;
+    }
+  }
+  .gist-file {
+    margin-bottom: 0 !important;
+  }
+  .gist .pl-ii {
+    color: initial !important;
+    background-color: transparent !important;
+  }
+}
+
+.request-example {
+  background: #4f566b;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  .request-topbar {
+    background: #3c4257;
+    padding-bottom: 4px;
+    .request-title {
+      font-size: 12px;
+      user-select: none;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #a3acb9;
+      padding: 8px 8px 8px 12px;
+    }
+  }
+  .request-body {
+    .gist-file {
+      margin-bottom: 0;
+      border: 0;
+    }
+    .gist .highlight {
+    background: #141414;
+}
+.gist .blob-num,
+.gist .blob-code-inner,
+.gist .highlight,
+.gist .pl-enm,
+.gist .pl-ko,
+.gist .pl-mo,
+.gist .pl-mp1 .pl-sf,
+.gist .pl-ms,
+.gist .pl-pdc1,
+.gist .pl-scp,
+.gist .pl-smc,
+.gist .pl-som,
+.gist .pl-va,
+.gist .pl-vpf,
+.gist .pl-vpu,
+.gist .pl-mdr {
+     color: #ffffff;
+}
+.gist .pl-mb,
+.gist .pl-pdb {
+     font-weight: 700;
+}
+.gist .pl-c,
+.gist .pl-c span,
+.gist .pl-pdc {
+     color: #5b6270;
+     font-style: italic;
+}
+.gist .pl-sr .pl-cce {
+     color: #56b5c2;
+     font-weight: 400;
+}
+.gist .pl-ef,
+.gist .pl-en,
+.gist .pl-enf,
+.gist .pl-eoai,
+.gist .pl-kos,
+.gist .pl-mh .pl-pdh,
+.gist .pl-mr {
+     color: #61afef;
+}
+.gist .pl-ens,
+.gist .pl-vi {
+     color: #be5046;
+}
+.gist .pl-enti,
+.gist .pl-mai .pl-sf,
+.gist .pl-ml,
+.gist .pl-sf,
+.gist .pl-sr,
+.gist .pl-sr .pl-sra,
+.gist .pl-src,
+.gist .pl-st,
+.gist .pl-vo {
+     color: #56b5c2;
+}
+.gist .pl-eoi,
+.gist .pl-mri,
+.gist .pl-pds,
+.gist .pl-pse .pl-s1,
+.gist .pl-s,
+.gist .pl-s1 {
+     color: #97c279;
+}
+.gist .pl-k,
+.gist .pl-kolp,
+.gist .pl-mc,
+.gist .pl-pde {
+     color: #c578dd;
+}
+.gist .pl-mi,
+.gist .pl-pdi {
+     color: #c578dd;
+     font-style: italic;
+}
+.gist .pl-mp,
+.gist .pl-stp {
+     color: #818896;
+}
+.gist .pl-mdh,
+.gist .pl-mdi,
+.gist .pl-mdr {
+     font-weight: 400;
+}
+.gist .pl-mdht,
+.gist .pl-mi1 {
+     color: #97c279;
+     background: #020;
+}
+.gist .pl-md,
+.gist .pl-mdhf {
+     color: #df6b75;
+     background: #200;
+}
+.gist .pl-corl {
+     color: #df6b75;
+     text-decoration: underline;
+}
+.gist .pl-ib {
+     background: #df6b75;
+}
+.gist .pl-ii {
+     background: #e0c184;
+     color: #fff;
+}
+.gist .pl-iu {
+     background: #e05151;
+}
+.gist .pl-ms1 {
+     color: #aab1bf;
+     background: #373b41;
+}
+.gist .pl-c1,
+.gist .pl-cn,
+.gist .pl-e,
+.gist .pl-eoa,
+.gist .pl-eoac,
+.gist .pl-eoac .pl-pde,
+.gist .pl-kou,
+.gist .pl-mm,
+.gist .pl-mp .pl-s3,
+.gist .pl-mq,
+.gist .pl-s3,
+.gist .pl-sok,
+.gist .pl-sv,
+.gist .pl-mb {
+     color: #d19965;
+}
+.gist .pl-enc,
+.gist .pl-entc,
+.gist .pl-pse .pl-s2,
+.gist .pl-s2,
+.gist .pl-sc,
+.gist .pl-smp,
+.gist .pl-sr .pl-sre,
+.gist .pl-stj,
+.gist .pl-v,
+.gist .pl-pdb {
+     color: #e4bf7a;
+}
+.gist .pl-ent,
+.gist .pl-entl,
+.gist .pl-entm,
+.gist .pl-mh,
+.gist .pl-pdv,
+.gist .pl-smi,
+.gist .pl-sol,
+.gist .pl-mdh,
+.gist .pl-mdi {
+     color: #df6b75;
+}
+  }
+}
+
+
+.gist-meta {
+	 display: none !important;
+}
+ .response-example {
+	 background: #f7fafc;
+	 border-radius: 4px;
+	 overflow: hidden;
+	 box-shadow: 0 0 0 1px rgba(0, 0, 0, .07);
+}
+ .response-example .response-topbar {
+	 background: #e3e8ee;
+	 padding-bottom: 4px;
+}
+ .response-example .response-topbar .response-title {
+	 font-size: 12px;
+	 user-select: none;
+	 font-weight: 500;
+	 text-transform: uppercase;
+	 pointer-events: none;
+	 color: #697386;
+	 padding: 8px 8px 8px 12px;
+}
+ .response-example .gist-file {
+	 margin-bottom: 0 !important;
+}
+ .response-example .gist .pl-ii {
+	 color: initial !important;
+	 background-color: transparent !important;
+}
+ .request-example {
+	 background: #4f566b;
+	 border-radius: 4px;
+	 overflow: hidden;
+	 margin-bottom: 12px;
+}
+ .request-example .request-topbar {
+	 background: #3c4257;
+	 padding-bottom: 4px;
+}
+ .request-example .request-topbar .request-title {
+	 font-size: 12px;
+	 user-select: none;
+	 font-weight: 500;
+	 text-transform: uppercase;
+	 color: #a3acb9;
+	 padding: 8px 8px 8px 12px;
+}
+
+.request-example .request-body .gist-file {
+	 margin-bottom: 0;
+	 border: 0;
+}
+ .request-example .request-body .gist .highlight {
+	 background: #141414;
+}
+ .request-example .request-body .gist .blob-num, .request-example .request-body .gist .blob-code-inner, .request-example .request-body .gist .highlight, .request-example .request-body .gist .pl-enm, .request-example .request-body .gist .pl-ko, .request-example .request-body .gist .pl-mo, .request-example .request-body .gist .pl-mp1 .pl-sf, .request-example .request-body .gist .pl-ms, .request-example .request-body .gist .pl-pdc1, .request-example .request-body .gist .pl-scp, .request-example .request-body .gist .pl-smc, .request-example .request-body .gist .pl-som, .request-example .request-body .gist .pl-va, .request-example .request-body .gist .pl-vpf, .request-example .request-body .gist .pl-vpu, .request-example .request-body .gist .pl-mdr {
+	 color: #fff;
+}
+ .request-example .request-body .gist .pl-mb, .request-example .request-body .gist .pl-pdb {
+	 font-weight: 700;
+}
+ .request-example .request-body .gist .pl-c, .request-example .request-body .gist .pl-c span, .request-example .request-body .gist .pl-pdc {
+	 color: #5b6270;
+	 font-style: italic;
+}
+ .request-example .request-body .gist .pl-sr .pl-cce {
+	 color: #56b5c2;
+	 font-weight: 400;
+}
+ .request-example .request-body .gist .pl-ef, .request-example .request-body .gist .pl-en, .request-example .request-body .gist .pl-enf, .request-example .request-body .gist .pl-eoai, .request-example .request-body .gist .pl-kos, .request-example .request-body .gist .pl-mh .pl-pdh, .request-example .request-body .gist .pl-mr {
+	 color: #61afef;
+}
+ .request-example .request-body .gist .pl-ens, .request-example .request-body .gist .pl-vi {
+	 color: #be5046;
+}
+ .request-example .request-body .gist .pl-enti, .request-example .request-body .gist .pl-mai .pl-sf, .request-example .request-body .gist .pl-ml, .request-example .request-body .gist .pl-sf, .request-example .request-body .gist .pl-sr, .request-example .request-body .gist .pl-sr .pl-sra, .request-example .request-body .gist .pl-src, .request-example .request-body .gist .pl-st, .request-example .request-body .gist .pl-vo {
+	 color: #56b5c2;
+}
+ .request-example .request-body .gist .pl-eoi, .request-example .request-body .gist .pl-mri, .request-example .request-body .gist .pl-pds, .request-example .request-body .gist .pl-pse .pl-s1, .request-example .request-body .gist .pl-s, .request-example .request-body .gist .pl-s1 {
+	 color: #97c279;
+}
+ .request-example .request-body .gist .pl-k, .request-example .request-body .gist .pl-kolp, .request-example .request-body .gist .pl-mc, .request-example .request-body .gist .pl-pde {
+	 color: #c578dd;
+}
+ .request-example .request-body .gist .pl-mi, .request-example .request-body .gist .pl-pdi {
+	 color: #c578dd;
+	 font-style: italic;
+}
+ .request-example .request-body .gist .pl-mp, .request-example .request-body .gist .pl-stp {
+	 color: #818896;
+}
+ .request-example .request-body .gist .pl-mdh, .request-example .request-body .gist .pl-mdi, .request-example .request-body .gist .pl-mdr {
+	 font-weight: 400;
+}
+ .request-example .request-body .gist .pl-mdht, .request-example .request-body .gist .pl-mi1 {
+	 color: #97c279;
+	 background: #020;
+}
+ .request-example .request-body .gist .pl-md, .request-example .request-body .gist .pl-mdhf {
+	 color: #df6b75;
+	 background: #200;
+}
+ .request-example .request-body .gist .pl-corl {
+	 color: #df6b75;
+	 text-decoration: underline;
+}
+ .request-example .request-body .gist .pl-ib {
+	 background: #df6b75;
+}
+ .request-example .request-body .gist .pl-ii {
+	 background: #e0c184;
+	 color: #fff;
+}
+ .request-example .request-body .gist .pl-iu {
+	 background: #e05151;
+}
+ .request-example .request-body .gist .pl-ms1 {
+	 color: #aab1bf;
+	 background: #373b41;
+}
+ .request-example .request-body .gist .pl-c1, .request-example .request-body .gist .pl-cn, .request-example .request-body .gist .pl-e, .request-example .request-body .gist .pl-eoa, .request-example .request-body .gist .pl-eoac, .request-example .request-body .gist .pl-eoac .pl-pde, .request-example .request-body .gist .pl-kou, .request-example .request-body .gist .pl-mm, .request-example .request-body .gist .pl-mp .pl-s3, .request-example .request-body .gist .pl-mq, .request-example .request-body .gist .pl-s3, .request-example .request-body .gist .pl-sok, .request-example .request-body .gist .pl-sv, .request-example .request-body .gist .pl-mb {
+	 color: #d19965;
+}
+ .request-example .request-body .gist .pl-enc, .request-example .request-body .gist .pl-entc, .request-example .request-body .gist .pl-pse .pl-s2, .request-example .request-body .gist .pl-s2, .request-example .request-body .gist .pl-sc, .request-example .request-body .gist .pl-smp, .request-example .request-body .gist .pl-sr .pl-sre, .request-example .request-body .gist .pl-stj, .request-example .request-body .gist .pl-v, .request-example .request-body .gist .pl-pdb {
+	 color: #e4bf7a;
+}
+ .request-example .request-body .gist .pl-ent, .request-example .request-body .gist .pl-entl, .request-example .request-body .gist .pl-entm, .request-example .request-body .gist .pl-mh, .request-example .request-body .gist .pl-pdv, .request-example .request-body .gist .pl-smi, .request-example .request-body .gist .pl-sol, .request-example .request-body .gist .pl-mdh, .request-example .request-body .gist .pl-mdi {
+	 color: #df6b75;
+}

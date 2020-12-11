@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sign up page for Datanews News API service.">
+
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/img/favicon.ico') }}"/>
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/Feather/feather.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/libs/aos/dist/aos.css') }}">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/theme.min.css') }}">
+
+    <title>Sign up - Datanews API</title>
+
+  </head>
+  <body>
+    
+    <!-- CONTENT
+    ================================================== -->
+    <section class="section-border border-primary">
+      <div class="container d-flex flex-column">
+        <div class="row align-items-center justify-content-center no-gutters min-vh-100">
+          <div class="col-12 col-md-5 col-lg-4 py-8 py-md-11">
+            
+            <!-- Heading -->
+            <h1 class="mb-0 font-weight-bold text-center">
+              Sign up
+            </h1>
+
+            <!-- Text -->
+            <p class="mb-6 text-center text-muted">
+              Test sign in / sign up below.
+            </p>
+
+            {% for message in get_flashed_messages() %}
+              <div class="alert alert-danger" style="width: 100%;">{{ message }}</div>
+            {% endfor %}
+
+            <!-- Form -->
+            <form class="mb-6" method="POST">
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email">
+                  Email Address
+                </label>
+                {{ form.email(id="email", class="form-control", placeholder="name@address.com") | safe}}
+              </div>
+
+              <!-- Password -->
+              <div class="form-group mb-5">
+                <label for="password">
+                  Password
+                </label>
+                {{ form.password(id="password", class="form-control", placeholder="Enter your password") | safe }}
+              </div>
+
+              {{ form.csrf_token }}
+
+              <!-- Submit -->
+              <button class="btn btn-block btn-primary" type="submit">
+                Sign up
+              </button>
+
+            </form>
+
+            <!-- Text -->
+            <p class="mb-0 font-size-sm text-center text-muted">
+              Already have an account? <a href="{{ url_for('auth.signin') }}">Sign in</a>.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="{{ url_for('static', filename='assets/libs/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/libs/aos/dist/aos.js') }}"></script>
+
+    <!-- Theme JS -->
+    <script src="{{ url_for('static', filename='assets/js/theme.min.js') }}"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7EGDGVKPCC"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7EGDGVKPCC');
+        gtag('config', 'AW-667830544');
+      </script>
+  </body>
+</html>
