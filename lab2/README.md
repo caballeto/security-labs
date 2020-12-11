@@ -14,8 +14,8 @@ We use a [crib dragging tool](https://lzutao.github.io/cribdrag/) to simplify th
 
 #### Crib dragging
 
-![Crib drag](/security-labs/lab2/crib_drag.png?raw=true "Optional Title")
+![Crib drag](/lab2/crib_drag.png?raw=true "Optional Title")
 
 #### Searching google
 
-![Google search](/security-labs/lab2/risk_it_on_one.png?raw=true "Optional Title")
+![Google search](/lab2/risk_it_on_one.png?raw=true "Optional Title")
