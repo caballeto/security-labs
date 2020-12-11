@@ -1,0 +1,16 @@
+[Unit]
+Description=Gunicorn instance to serve security-web-app
+After=network.target
+
+[Service]
+User=vladyslav
+Group=www-data
+WorkingDirectory=/home/vladyslav/security-labs/lab5-6-7
+Environment="PATH=/home/vladyslav/miniconda3/bin"
+Environment="SECRET_KEY=ASklaV0akf34SF43sfarHagl1m7aUgiag4aY3p"
+Environment="DATABASE_URL=mysql://vladyslav:vladyslav@localhost/security_web_app"
+Environment="ENCRYPTION_KEY=g68688ckM-FxwwphzIVvcfCB2p3nvqD_5juk2ykuVr4="
+ExecStart=/home/vladyslav/miniconda3/bin/gunicorn --workers 3 --bind unix:security_app.sock -m 007 src.run:app
+
+[Install]
+WantedBy=multi-user.target
