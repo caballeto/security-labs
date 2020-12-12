@@ -43,7 +43,12 @@ def generate_password_with_year():
 
 def generate_number_password():
     pass_len = random.randint(4, 10)
-    return ''.join(random.SystemRandom().choice(string.digits) for _ in range(pass_len))
+    password = ''.join(random.SystemRandom().choice(string.digits) for _ in range(pass_len))
+
+    replacements = {'e': '#', 'o': '!', 'k': '?', 's': '@', 't': '$'}
+    if random.random() > 0.5:
+        password = ''.join([random.choice(replacements.get(x, '') + x) for x in password])
+    return password
 
 
 def generate_human_passwords():
