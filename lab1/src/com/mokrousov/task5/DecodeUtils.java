@@ -11,9 +11,9 @@ public class DecodeUtils {
   private static final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   private static final int NGRAM_LENGTH = 4;
   private static final Map<String, Integer> NGRAM_FREQUENCIES;
-  private static final double SURVIVERS_PERCENT = 0.2;
-  private static final double MATING_PERCENT = 0.6;
-  private static final double MUTATION_PROBABILITY = 0.6;
+  private static final double SURVIVERS_PERCENT = 0.25;
+  private static final double MATING_PERCENT = 0.7;
+  private static final double MUTATION_PROBABILITY = 0.7;
   
   static {
     NGRAM_FREQUENCIES = new HashMap<>();
@@ -177,7 +177,6 @@ public class DecodeUtils {
     }
     
     for (int i = 0; i < iterations; i++) {
-      System.out.println(i);
       sortKeys(possibleKeys, text, keyIndex, population);
       possibleKeys = limitKeysSize(possibleKeys, populationSize);
       List<List<Integer>> nextKeys = limitKeysSize(possibleKeys, survivers);
