@@ -11,7 +11,6 @@ public class Main {
     for (int i = 0; i < BYTE_LIMIT; i++) {
       StringBuilder sb = new StringBuilder();
       for (char c : s.toCharArray()) {
-        int x = (char) c;
         int r = c ^ i;
         sb.append((char) r);
       }

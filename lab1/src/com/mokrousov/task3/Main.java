@@ -3,36 +3,6 @@ package com.mokrousov.task3;
 import java.util.*;
 
 public class Main {
-  public static int findKeyLengthText(String text) {
-    for (int len = 1; len <= Math.min(text.length(), 25); len++) {
-      double averageIndex = 0;
-      for (int sequence = 1; sequence <= len; sequence++) {
-        int[] distribution = new int[26];
-        double indexOfCoincidence = 0;
-        int count = 0;
-        
-        for (int k = sequence - 1; k < text.length(); k += len) {
-          distribution[text.charAt(k) - 'a']++;
-          count++;
-        }
-        
-        for (double frequency : distribution) {
-          indexOfCoincidence += frequency * (frequency - 1);
-        }
-        
-        indexOfCoincidence /= (count * (count - 1));
-        averageIndex += indexOfCoincidence;
-      }
-      
-      averageIndex /= len;
-      if (averageIndex >= 0.06) {
-        return len;
-      }
-    }
-    
-    return -1;
-  }
-  
   public static int findKeyLength(byte[] s) {
     for (int len = 1; len <= 25; len++) {
       double averageIndex = 0;
